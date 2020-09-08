@@ -1,0 +1,106 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "Anderson Longará",
+      "login": "anderson@gmail.com",
+      "password": "1234567a"
+    }
+  ],
+  "stock": [
+    {
+      "id": 1,
+      "amount": 3
+    },
+    {
+      "id": 2,
+      "amount": 5
+    },
+    {
+      "id": 3,
+      "amount": 2
+    },
+    {
+      "id": 4,
+      "amount": 1
+    },
+    {
+      "id": 5,
+      "amount": 5
+    },
+    {
+      "id": 6,
+      "amount": 10
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Maybelline Face Studio Master Hi-Light Light Booster Bronzer",
+      "description": "Maybelline Face Studio Master Hi-Light Light Boosting bronzer formula has an expert.",
+      "price": 14.99,
+      "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/991799d3e70b8856686979f8ff6dcfe0_ra,w158,h184_pa,w158,h184.png",
+      "created": "2020-09-05"
+    },
+    {
+      "id": 2,
+      "name": "Maybelline Fit Me Bronzer",
+      "description": "Why You'll Love It Lightweight pigments blend easily and wear evenly Provides a natural.",
+      "price": 10.29,
+      "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/d4f7d82b4858c622bb3c1cef07b9d850_ra,w158,h184_pa,w158,h184.png",
+      "created": "2020-09-05"
+    },
+    {
+      "id": 3,
+      "name": "Maybelline Facestudio Master Contour Kit",
+      "description": "Maybelline Facestudio Master Contour Kit is the ultimate on the go all-in-one palette.",
+      "price": 15.99,
+      "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/4f731de249cbd4cb819ea7f5f4cfb5c3_ra,w158,h184_pa,w158,h184.png",
+      "created": "2020-09-05"
+    },
+    {
+      "id": 4,
+      "name": "CoverGirl truBLEND Bronzer",
+      "description": "CoverGirl's New truBLEND Bronzer has a marble-baked formula that blends instantly with skin making bronzer lines a thing of the past.",
+      "price": 13.99,
+      "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/60f9f4f29be5221ff70cf20fabc03564_ra,w158,h184_pa,w158,h184.png",
+      "created": "2020-09-05"
+    },
+    {
+      "id": 5,
+      "name": "CoverGirl Clean Glow Bronzer",
+      "description": "Flaunt the coveted beach-bronze glow in one simple step.",
+      "price": 8.99,
+      "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/4e90929a9c24a51c3db3988b205f3b43_ra,w158,h184_pa,w158,h184.jpeg",
+      "created": "2020-09-05"
+    },
+    {
+      "id": 6,
+      "name": "CoverGirl Advanced Radiance Age Defying Liquid Makeup ",
+      "description": "Take 5 years off the look of your skin.* This smooth liquid foundation with Olay ingredients blends into the skin.",
+      "price": 12.49,
+      "image": "https://d3t32hsnjxo7q6.cloudfront.net/i/9b13eee88cc626be90db443abb6e8bb9_ra,w158,h184_pa,w158,h184.jpeg",
+      "created": "2020-09-05"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "customerID": 1,
+      "total_order": 1,
+      "created_at": "2020-09-05",
+      "comments": ""
+    }
+  ],
+  "orderProduct": [
+    {
+      "orderID": 1,
+      "productID": 1,
+      "quantity": 2,
+      "created_at": "2020-09-05",
+      "unit_price": 129,
+      "total_price": 258,
+      "id": 1
+    }
+  ]
+}
