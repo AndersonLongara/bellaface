@@ -21,7 +21,7 @@ Abaixo segue o que foi utilizado na criação deste projeto:
 
 # Preview
 
-![Alt-imagem](https://github.com/AndersonLongara/bellaface/blob/master/giphy.gif)
+![alt text](https://github.com/AndersonLongara/bellaface/blob/master/giphy-1.gif "Preview")
 
 # Começando
 
