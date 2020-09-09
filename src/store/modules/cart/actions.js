@@ -12,11 +12,18 @@ export function addToCartSuccess(product) {
   };
 }
 
-export function addToRequestSuccess(product, comments) {
+export function addToRequestCart(product, comments) {
+  return {
+    type: '@cart/ADD_REQUEST_CART',
+    product,
+    comments,
+  };
+}
+
+export function addToRequestSuccess(product) {
   return {
     type: '@cart/ADD_REQUEST_SUCCESS',
     product,
-    comments,
   };
 }
 

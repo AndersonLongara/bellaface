@@ -7,7 +7,7 @@ import api from '../../../services/api';
 import history from '../../../services/history';
 import { formatPrice } from '../../../util/format';
 
-import { addToCartSuccess, updateAmountSuccess } from './actions';
+import { addToCartSuccess, updateAmountSuccess, addToRequestSuccess } from './actions';
 
 function* addToCart({ id }) {
   const productExists = yield select(state =>
@@ -62,35 +62,47 @@ function* addToRequest({product, comments}) {
   try {
     const dateFormatted = format( new Date(), "dd/MM/yyyy")
 
-    const newOrder = yield api.post('orders', {
-      customerID: 1,
-      total_order: product.length,
-      created_at: dateFormatted,
-      comments: comments
-    })
+    const date = format( new Date(), "E")
 
-    product.map( p => {
-      const newOrderProduct = api.post('orderProduct', {
-        orderID: newOrder.data.id,
-        productID: p.id,
-        quantity: p.amount,
+    console.log(date);
+
+    if (date === 'Sat' || date === 'Sun') {
+
+      toast.error('Não aceitamos pedidos nos finais de semana');
+
+    } else {
+      const newOrder = yield api.post('orders', {
+        customerID: 1,
+        total_order: product.length,
         created_at: dateFormatted,
-        unit_price: p.priceFormatted,
-        total_price: p.subtotal
+        comments: comments
       })
-    })
-    if(product.length > 0) {
-      history.push('/');
+      product.map( p => {
+        const newOrderProduct = api.post('orderProduct', {
+          orderID: newOrder.data.id,
+          productID: p.id,
+          quantity: p.amount,
+          created_at: dateFormatted,
+          unit_price: p.priceFormatted,
+          total_price: p.subtotal
+        })
+      })
+      if(product.length > 0) {
+        history.push('/');
+        toast.success('Pedido finalizado com sucesso!')
+        yield put(addToRequestSuccess(product));
+      }
     }
-    toast.success('Pedido finalizado com sucesso!')
+
 
   }catch(err) {
-
+    toast.error('Erro ao realizar o pedido');
   }
 }
 
 export default all([
   takeLatest('@cart/ADD_REQUEST', addToCart),
   takeLatest('@cart/UPDATE_AMOUNT_REQUEST', updateAmount),
-  takeLatest('@cart/ADD_REQUEST_SUCCESS', addToRequest),
+  takeLatest('@cart/ADD_REQUEST_CART', addToRequest),
 ]);
+

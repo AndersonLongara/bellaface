@@ -48,7 +48,7 @@ export default function Cart() {
   }
 
   function handlerRequest(props) {
-    dispatch(CartActions.addToRequestSuccess(props, comments))
+    dispatch(CartActions.addToRequestCart(props, comments))
     return <Link to="/"/>
   }
 

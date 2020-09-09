@@ -90,6 +90,62 @@
       "total_order": 1,
       "created_at": "2020-09-05",
       "comments": ""
+    },
+    {
+      "customerID": 1,
+      "total_order": 3,
+      "created_at": "08/09/2020",
+      "comments": "Entrar para tal pessoa",
+      "id": 2
+    },
+    {
+      "customerID": 1,
+      "total_order": 1,
+      "created_at": "08/09/2020",
+      "comments": "",
+      "id": 3
+    },
+    {
+      "customerID": 1,
+      "total_order": 0,
+      "created_at": "08/09/2020",
+      "comments": "",
+      "id": 4
+    },
+    {
+      "customerID": 1,
+      "total_order": 0,
+      "created_at": "08/09/2020",
+      "comments": "",
+      "id": 5
+    },
+    {
+      "customerID": 1,
+      "total_order": 0,
+      "created_at": "08/09/2020",
+      "comments": "",
+      "id": 6
+    },
+    {
+      "customerID": 1,
+      "total_order": 0,
+      "created_at": "08/09/2020",
+      "comments": "",
+      "id": 7
+    },
+    {
+      "customerID": 1,
+      "total_order": 1,
+      "created_at": "08/09/2020",
+      "comments": "",
+      "id": 8
+    },
+    {
+      "customerID": 1,
+      "total_order": 1,
+      "created_at": "09/09/2020",
+      "comments": "Pedido precisa ser entregue mais rápido",
+      "id": 9
     }
   ],
   "orderProduct": [
@@ -101,6 +157,60 @@
       "unit_price": 129,
       "total_price": 258,
       "id": 1
+    },
+    {
+      "orderID": 2,
+      "productID": 1,
+      "quantity": 3,
+      "created_at": "08/09/2020",
+      "unit_price": "R$ 14,99",
+      "total_price": "R$ 44,97",
+      "id": 2
+    },
+    {
+      "orderID": 2,
+      "productID": 2,
+      "quantity": 2,
+      "created_at": "08/09/2020",
+      "unit_price": "R$ 10,29",
+      "total_price": "R$ 20,58",
+      "id": 3
+    },
+    {
+      "orderID": 2,
+      "productID": 6,
+      "quantity": 1,
+      "created_at": "08/09/2020",
+      "unit_price": "R$ 12,49",
+      "total_price": "R$ 12,49",
+      "id": 4
+    },
+    {
+      "orderID": 3,
+      "productID": 1,
+      "quantity": 2,
+      "created_at": "08/09/2020",
+      "unit_price": "R$ 14,99",
+      "total_price": "R$ 29,98",
+      "id": 5
+    },
+    {
+      "orderID": 8,
+      "productID": 1,
+      "quantity": 1,
+      "created_at": "08/09/2020",
+      "unit_price": "R$ 14,99",
+      "total_price": "R$ 14,99",
+      "id": 6
+    },
+    {
+      "orderID": 9,
+      "productID": 1,
+      "quantity": 3,
+      "created_at": "09/09/2020",
+      "unit_price": "R$ 14,99",
+      "total_price": "R$ 44,97",
+      "id": 7
     }
   ]
 }
