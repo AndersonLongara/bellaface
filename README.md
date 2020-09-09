@@ -41,7 +41,8 @@ Abaixo segue o que foi utilizado na criação deste projeto:
 
 1. `yarn start` para iniciar o servidor (ou `npm start`, se não estiver usando Yarn).
 2. `json-server server.json -p 3333` para iniciar a API REST.
-2. `open http://localhost:3000/` para abrir o site em seu navegador favorito.
+3. `open http://localhost:3000/` para abrir o site em seu navegador favorito.
+4. Usuario e senha Pré-cadastrdo `E-mail: anderson@gmail.com` `Password: 1234567a`
 
 ## Licença
 
