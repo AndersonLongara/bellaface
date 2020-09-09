@@ -19,6 +19,9 @@ Abaixo segue o que foi utilizado na criação deste projeto:
 * [React-icons](https://react-icons.github.io/react-icons/).
 * [Date-fns](https://date-fns.org/).
 
+# Preview
+
+![Alt-imagem](https://github.com/AndersonLongara/bellaface/blob/master/giphy.gif)
 
 # Começando
 
